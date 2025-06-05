@@ -1,0 +1,12 @@
+module Regfile(input clk,reg_write, input [2:0] a_adr, b_adr, des_adr, input [15:0] w_data, output [15:0] a_out, b_out);
+	reg [15:0] regfile [7:0];
+	initial begin
+		$readmemb("reg_init.txt",regfile);
+	end
+	assign a_out = regfile[a_adr];
+	assign b_out = regfile[b_adr];
+	always@(posedge clk)begin
+		if(reg_write)
+			regfile[des_adr] <= w_data;
+	end
+endmodule

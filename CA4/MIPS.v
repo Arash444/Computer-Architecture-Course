@@ -1,0 +1,10 @@
+module MIPS(input clk, init);
+	wire [15:0] Inst;
+	wire [2:0] ALU_opc;
+	wire [2:0] alu_op;
+	wire [1:0] PCsrc, AluSrcA;
+	wire wDataSrc, AluSrcB, memWrite, memRead, PCwrite, PCWriteCond, IRwrite, IorD, regWrite, regWriteALU, move, moveALU;
+	datapath ourdp(clk, init, wDataSrc, AluSrcB, memWrite, memRead, PCwrite, PCWriteCond, IRwrite, IorD, regWrite, regWriteALU, move, moveALU, PCsrc, AluSrcA, ALU_opc, Inst);
+   	CU ourCU(Inst[15:12], clk, init, wDataSrc, AluSrcB, memWrite, memRead, PCwrite, PCWriteCond, IRwrite, IorD, regWrite, move, PCsrc, AluSrcA, alu_op);
+	ALUCU ourALUCU(alu_op, Inst[8:0], regWriteALU, moveALU, ALU_opc);
+endmodule

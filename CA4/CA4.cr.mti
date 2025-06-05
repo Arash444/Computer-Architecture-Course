@@ -1,0 +1,106 @@
+{H:/University/Term 4/Computer Architecture/CA/CA4/datapath.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/datapath.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA4/testbench.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/testbench.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TB
+
+Top level modules:
+	TB
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA4/or.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/or.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Or
+
+Top level modules:
+	Or
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA4/sign-ex.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/sign-ex.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module signex
+
+Top level modules:
+	signex
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA4/Register.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/Register.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Register
+
+Top level modules:
+	Register
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA4/ALU-CU.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/ALU-CU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALUCU
+
+Top level modules:
+	ALUCU
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA4/CU.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/CU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CU
+
+Top level modules:
+	CU
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA4/data-memory.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/data-memory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Memory
+
+Top level modules:
+	Memory
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA4/mux2to1.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/mux2to1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux2to1
+
+Top level modules:
+	mux2to1
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA4/MIPS.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/MIPS.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MIPS
+
+Top level modules:
+	MIPS
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA4/mux4to1.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/mux4to1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux4to1
+
+Top level modules:
+	mux4to1
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA4/ALU.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/ALU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA4/reg-file.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/reg-file.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Regfile
+
+Top level modules:
+	Regfile
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA4/and.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/and.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module And
+
+Top level modules:
+	And
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA4/pc.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA4/pc.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}}

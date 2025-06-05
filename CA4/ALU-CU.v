@@ -1,0 +1,37 @@
+module ALUCU(input[2:0] alu_op, input[8:0] func, output reg regWriteALU, moveALU, output reg [2:0] ALU_opc);
+	always@(func,alu_op) begin
+		ALU_opc = 3'b000;
+		moveALU = 1'b0;
+		regWriteALU = 1'b1;
+		if (alu_op == 3'b000) begin
+			if (func == 9'd1) begin
+				ALU_opc <= 3'b000; //B
+				moveALU <= 1'b1;
+				end
+			else if (func == 9'd2)
+				ALU_opc <= 3'b001; //A
+			else if (func == 9'd4)
+				ALU_opc <= 3'b010; //add
+			else if (func == 9'd8) 
+				ALU_opc <= 3'b011; //sub
+			else if (func == 9'd16) 
+				ALU_opc <= 3'b100; //and
+			else if (func == 9'd32) 
+				ALU_opc <= 3'b101; //or
+			else if (func == 9'd64) 
+				ALU_opc <= 3'b110; //not
+			else if (func == 9'd128) begin
+				ALU_opc <= 3'b111; //nop
+				regWriteALU <= 1'b0;
+				end
+			end
+		else if (alu_op == 3'b001) 
+			ALU_opc <= 3'b010; //add
+		else if (alu_op == 3'b010) 
+			ALU_opc <= 3'b011; //sub
+		else if (alu_op == 3'b011) 
+			ALU_opc <= 3'b100; //and
+		else if (alu_op == 3'b100) 
+			ALU_opc <= 3'b101; //or
+		end
+endmodule
