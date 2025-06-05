@@ -1,0 +1,10 @@
+module INSMEM(input clk, input [9:0]adr, output reg [31:0]ins);
+	reg [31:0] memory[1023:0];
+	initial begin
+		$readmemb("instructions.txt",memory);
+	end
+	always@(posedge clk) begin
+		ins <= memory[adr];
+	end // always@(posedge clk)
+endmodule // INSMEM
+			

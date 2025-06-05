@@ -1,0 +1,389 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dH:/University/Term 4/Computer Architecture/CA/CA1
+vadder
+!s110 1652038004
+!i10b 1
+!s100 i^K=D`7fW@<eUO4X>lF@32
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IiQ0Bi6>fS79@LWkk63mHG0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dH:/University/Term 4/Computer Architecture/CA/ca 2
+w1651412406
+8H:/University/Term 4/Computer Architecture/CA/ca 2/adder.v
+FH:/University/Term 4/Computer Architecture/CA/ca 2/adder.v
+!i122 2094
+Z3 L0 1 3
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1652038004.000000
+!s107 H:/University/Term 4/Computer Architecture/CA/ca 2/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/adder.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vALU
+Z7 !s110 1652038005
+!i10b 1
+!s100 7G3X7S=6cN;60bOUW`M9j0
+R0
+I>ZTb5AMi=L51<8TJ<=1b41
+R1
+R2
+w1652036823
+8H:/University/Term 4/Computer Architecture/CA/ca 2/ALU.v
+FH:/University/Term 4/Computer Architecture/CA/ca 2/ALU.v
+!i122 2095
+L0 1 23
+R4
+r1
+!s85 0
+31
+Z8 !s108 1652038005.000000
+!s107 H:/University/Term 4/Computer Architecture/CA/ca 2/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/ALU.v|
+!i113 1
+R5
+R6
+n@a@l@u
+vALUCU
+R7
+!i10b 1
+!s100 cEb<<SMfMiN0`8gg?5]Fa0
+R0
+I_KKO?I3GNcHbm4T??0hdf0
+R1
+R2
+w1652032778
+8H:/University/Term 4/Computer Architecture/CA/ca 2/ALU-CU.v
+FH:/University/Term 4/Computer Architecture/CA/ca 2/ALU-CU.v
+!i122 2096
+L0 1 25
+R4
+r1
+!s85 0
+31
+R8
+!s107 H:/University/Term 4/Computer Architecture/CA/ca 2/ALU-CU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/ALU-CU.v|
+!i113 1
+R5
+R6
+n@a@l@u@c@u
+vAnd
+Z9 !s110 1652038006
+!i10b 1
+!s100 ^2j0cllL95I`BS8g^T[Yj0
+R0
+IzK]FLc5:MSKj^lIU:9^aD1
+R1
+R2
+w1651412243
+8H:/University/Term 4/Computer Architecture/CA/ca 2/and.v
+FH:/University/Term 4/Computer Architecture/CA/ca 2/and.v
+!i122 2097
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 H:/University/Term 4/Computer Architecture/CA/ca 2/and.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/and.v|
+!i113 1
+R5
+R6
+n@and
+vCU
+R9
+!i10b 1
+!s100 h>k9kT=3]U=9<Z`^RLB>S3
+R0
+IAWjSHaXCNXYF_;OSY@S=R1
+R1
+R2
+w1652037228
+8H:/University/Term 4/Computer Architecture/CA/ca 2/CU.v
+FH:/University/Term 4/Computer Architecture/CA/ca 2/CU.v
+!i122 2098
+L0 1 123
+R4
+r1
+!s85 0
+31
+Z10 !s108 1652038006.000000
+!s107 H:/University/Term 4/Computer Architecture/CA/ca 2/CU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/CU.v|
+!i113 1
+R5
+R6
+n@c@u
+vDATAMEM
+R9
+!i10b 1
+!s100 G]o0kboW5lPdBe5^=1]L91
+R0
+I9jgY^QPe3c=@J8@=lc@102
+R1
+R2
+w1652016380
+8H:/University/Term 4/Computer Architecture/CA/ca 2/data-memory.v
+FH:/University/Term 4/Computer Architecture/CA/ca 2/data-memory.v
+!i122 2099
+Z11 L0 1 11
+R4
+r1
+!s85 0
+31
+R10
+!s107 H:/University/Term 4/Computer Architecture/CA/ca 2/data-memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/data-memory.v|
+!i113 1
+R5
+R6
+n@d@a@t@a@m@e@m
+vdatapath
+Z12 !s110 1652038008
+!i10b 1
+!s100 E@5Hj8o4[4Rh`7lLafC>?1
+R0
+IU`G0=nRZO>9B7]3zX@N:^3
+R1
+R2
+w1652037834
+8H:/University/Term 4/Computer Architecture/CA/ca 2/datapath.v
+FH:/University/Term 4/Computer Architecture/CA/ca 2/datapath.v
+!i122 2106
+L0 1 26
+R4
+r1
+!s85 0
+31
+Z13 !s108 1652038008.000000
+!s107 H:/University/Term 4/Computer Architecture/CA/ca 2/datapath.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/datapath.v|
+!i113 1
+R5
+R6
+vINSMEM
+Z14 !s110 1652038007
+!i10b 1
+!s100 I>UIzFA=]D:PH^ZlnNiK93
+R0
+IUQU1a0B_?DzQESNUE3M_P0
+R1
+R2
+w1651512695
+8H:/University/Term 4/Computer Architecture/CA/ca 2/inst-memory.v
+FH:/University/Term 4/Computer Architecture/CA/ca 2/inst-memory.v
+!i122 2100
+R11
+R4
+r1
+!s85 0
+31
+R10
+!s107 H:/University/Term 4/Computer Architecture/CA/ca 2/inst-memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/inst-memory.v|
+!i113 1
+R5
+R6
+n@i@n@s@m@e@m
+vMIPS
+Z15 !s110 1652038009
+!i10b 1
+!s100 J@?io_QlW`V;9i:0TD?ih1
+R0
+IGhPo86c]BOCWMYZg]=dIT1
+R1
+R2
+w1652032672
+8H:/University/Term 4/Computer Architecture/CA/ca 2/MIPS.v
+FH:/University/Term 4/Computer Architecture/CA/ca 2/MIPS.v
+!i122 2107
+Z16 L0 1 9
+R4
+r1
+!s85 0
+31
+R13
+!s107 H:/University/Term 4/Computer Architecture/CA/ca 2/MIPS.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/MIPS.v|
+!i113 1
+R5
+R6
+n@m@i@p@s
+vmux
+R14
+!i10b 1
+!s100 o;U^SUIB^4nin:E>JeK5A0
+R0
+IBYNUDoWi_NeOoVfll8Gb22
+R1
+R2
+w1651481696
+8H:/University/Term 4/Computer Architecture/CA/ca 2/mux2to1.v
+FH:/University/Term 4/Computer Architecture/CA/ca 2/mux2to1.v
+!i122 2101
+R3
+R4
+r1
+!s85 0
+31
+Z17 !s108 1652038007.000000
+!s107 H:/University/Term 4/Computer Architecture/CA/ca 2/mux2to1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/mux2to1.v|
+!i113 1
+R5
+R6
+vPC
+R14
+!i10b 1
+!s100 Y0C5Tb?HKT[RlegZg_WfJ3
+R0
+I_34D7UTe@EHWoUSgVF^Ie2
+R1
+R2
+w1652029649
+8H:/University/Term 4/Computer Architecture/CA/ca 2/pc.v
+FH:/University/Term 4/Computer Architecture/CA/ca 2/pc.v
+!i122 2102
+R16
+R4
+r1
+!s85 0
+31
+R17
+!s107 H:/University/Term 4/Computer Architecture/CA/ca 2/pc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/pc.v|
+!i113 1
+R5
+R6
+n@p@c
+vRegfile
+R14
+!i10b 1
+!s100 RAaXhHAW:E:?z__h_ZDh>0
+R0
+IGJZ?U1<fCfjcoO6coE<UD2
+R1
+R2
+w1651950827
+8H:/University/Term 4/Computer Architecture/CA/ca 2/reg-file.v
+FH:/University/Term 4/Computer Architecture/CA/ca 2/reg-file.v
+!i122 2103
+L0 1 12
+R4
+r1
+!s85 0
+31
+R17
+!s107 H:/University/Term 4/Computer Architecture/CA/ca 2/reg-file.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/reg-file.v|
+!i113 1
+R5
+R6
+n@regfile
+vshifter
+R12
+!i10b 1
+!s100 [FRV:Hi0oC`S<<0;k[;Yf0
+R0
+ImzI:c2UWYWo>P[KkFgzDJ0
+R1
+R2
+w1651429124
+8H:/University/Term 4/Computer Architecture/CA/ca 2/shifter.v
+FH:/University/Term 4/Computer Architecture/CA/ca 2/shifter.v
+!i122 2104
+R3
+R4
+r1
+!s85 0
+31
+R17
+!s107 H:/University/Term 4/Computer Architecture/CA/ca 2/shifter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/shifter.v|
+!i113 1
+R5
+R6
+vsignex
+R12
+!i10b 1
+!s100 z=H4PjYc@cEX2Az]F0l^B0
+R0
+Id07gb?zzT<1a9=_;n`OOK3
+R1
+R2
+w1651428940
+Z18 8H:/University/Term 4/Computer Architecture/CA/ca 2/sign-ex.v
+Z19 FH:/University/Term 4/Computer Architecture/CA/ca 2/sign-ex.v
+!i122 2105
+R3
+R4
+r1
+!s85 0
+31
+R13
+Z20 !s107 H:/University/Term 4/Computer Architecture/CA/ca 2/sign-ex.v|
+Z21 !s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/sign-ex.v|
+!i113 1
+R5
+R6
+vsignexone
+!s110 1651428749
+!i10b 1
+!s100 CY3eeVV7S17<0ZZZXYkiS0
+R0
+Ia^la:8K?^^lcN7lM8fjVj2
+R1
+R2
+w1651428721
+R18
+R19
+!i122 252
+R3
+R4
+r1
+!s85 0
+31
+!s108 1651428749.000000
+R20
+R21
+!i113 1
+R5
+R6
+vTB
+R15
+!i10b 1
+!s100 KCZNVRZ[kRZAnJlcM@]^O2
+R0
+IiDiNK;J2Ik@lJeIFgX@^C3
+R1
+R2
+w1652038000
+8H:/University/Term 4/Computer Architecture/CA/ca 2/testbench.v
+FH:/University/Term 4/Computer Architecture/CA/ca 2/testbench.v
+!i122 2108
+L0 1 10
+R4
+r1
+!s85 0
+31
+!s108 1652038009.000000
+!s107 H:/University/Term 4/Computer Architecture/CA/ca 2/testbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/University/Term 4/Computer Architecture/CA/ca 2/testbench.v|
+!i113 1
+R5
+R6
+n@t@b

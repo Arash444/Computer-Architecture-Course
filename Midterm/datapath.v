@@ -1,0 +1,26 @@
+module datapath(input clk, init, reg_dst, r31, reg_write, alu_src, mem_read, mem_write, mem_to_reg, write_pc_4, branch, adr_r31, jump, input [2:0] ALU_opc, output [31:0] Inst);
+	wire [31:0] RegA_data, RegB_data, wdata1, wdata2, B_ALU, ALU_Res, data_extend16, data_extend26, Mem_data, shift, beqL;
+	wire [31:0] PCin, PC1, PCbeq, PCR31;
+	wire [9:0] PCout;
+	wire [4:0] wReg1, wReg2;
+	wire Zero, beq;
+	PC ourPC(clk, init, PCin[9:0], PCout);
+	assign PC1 = {{22{1'b0}},PCout} + 32'd1;
+	INSMEM ourINSMEM(clk, PCout, Inst);
+	Regfile ourRegfile(clk,reg_write, Inst[25:21], Inst[20:16], wReg2, wdata2, RegA_data, RegB_data);
+	mux#(5) WR1(reg_dst, Inst[15:11], Inst[20:16], wReg1);
+	mux#(5) WR2(r31, 5'b11111, wReg1, wReg2);
+	mux WD2(write_pc_4, PC1, wdata1, wdata2);
+	mux BALU(alu_src, data_extend16, RegB_data, B_ALU);
+	signex#(16) SIX16(Inst[15:0], data_extend16);
+	ALU ourALU(RegA_data, B_ALU, ALU_opc, Zero, ALU_Res);
+	DATAMEM ourDATAMEM(mem_write, mem_read, clk, ALU_Res[9:0], RegB_data, Mem_data);
+	mux WD1(mem_to_reg, Mem_data, ALU_Res, wdata1);
+	shifter ourShifter(data_extend16, shift);
+	assign beqL = shift + 1;
+	assign beq = Zero&branch;
+	mux PCBEQ(beq, beqL, PC1, PCbeq);
+	mux PCr31(adr_r31, RegA_data, PCbeq, PCR31);
+	signex SIX26(Inst[25:0], data_extend26);
+	mux PCJ(jump, data_extend26, PCR31, PCin);
+endmodule

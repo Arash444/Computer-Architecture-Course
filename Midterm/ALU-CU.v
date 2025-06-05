@@ -1,0 +1,25 @@
+module ALUCU(input[1:0] alu_op, input[5:0] func, output reg [2:0] out);
+	always@(func,alu_op) begin
+		out = 3'd0;
+		if (alu_op == 2'b00) begin
+			if (func == 6'b000000) begin
+				out <= 3'b010; //add
+			end else if (func == 6'b000001) begin
+				out <= 3'b011; //sub
+			end else if (func == 6'b000010) begin
+				out <= 3'b100; //slt
+			end else if (func == 6'b000011) begin
+				out <= 3'b000; //and
+			end else if (func == 6'b000100) begin
+				out <= 3'b001; //or
+			end
+			
+		end else if (alu_op == 2'b01) begin
+			out <= 3'b010; //add
+		end else if (alu_op == 2'b10) begin
+			out <= 3'b011; //sub
+		end else if (alu_op == 2'b11) begin
+			out <= 3'b100; //slt
+		end
+		end
+endmodule // ALUCU

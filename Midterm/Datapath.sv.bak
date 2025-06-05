@@ -1,0 +1,13 @@
+module CU(input clk, init, reg_dst, r31, reg_write, alu_src, mem_read, mem_write, mem_to_reg, write_pc_4, branch, adr_r31, jump, output reg [1:0] alu_op);
+	wire [31:0] Inst, RegA_data, RegB_data, write_data1, write_data2;
+	wire [9:0] PCout, PCin, PC4, ins;
+	wire [4:0] write_Reg1, write_Reg2;
+	PC ourPC(clk, init, PCin, PCout);
+	assign PC4 = PCout + 4;
+	INSMEM ourINSMEM(clk, PCout, Inst);
+	Regfile ourRegfile(clk,reg_write, Inst[25:21], Inst[20:16], write_Reg2, write_data2, RegA_data, RegB_data);
+	mux WR1(reg_dst, Inst[15:11], Inst[20:16], write_Reg1);
+	mux WR2(r31, 5'b11111, write_Reg1, write_Reg2);
+	mux WD2(write_pc_4, PC4, write_data1, write_data2);
+
+endmodule
