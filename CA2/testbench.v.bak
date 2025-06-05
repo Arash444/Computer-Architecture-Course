@@ -1,0 +1,9 @@
+module TB();
+	reg clkk=1,initt=1;
+	MIPS UUT(clkk,initt);
+	always#10 clkk = ~clkk;
+	initial begin
+		#21 initt = 0;
+		#1000 $stop;
+	end
+endmodule

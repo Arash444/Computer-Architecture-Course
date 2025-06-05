@@ -1,0 +1,20 @@
+# Reading pref.tcl
+# OpenFile {H:/University/Term 4/Computer Architecture/CA/CA1/CA1.mpf}
+# Loading project CA1
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 11:31:24 on Apr 21,2022
+# Loading work.TB
+# Loading work.main
+# Loading work.Controller
+# Loading work.data_loader
+# Loading work.error_checker
+# Loading work.Register
+# Loading work.calculator_coefficient
+add wave -position insertpoint sim:/TB/*
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA1/TB.v(13)
+#    Time: 5039 ns  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA1/TB.v line 13
+# End time: 11:33:10 on Apr 21,2022, Elapsed time: 0:01:46
+# Errors: 0, Warnings: 1

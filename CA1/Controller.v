@@ -1,0 +1,37 @@
+`timescale 1ns/1ns
+module Controller (input clk,rst,start, output reg ld_p, ld_ss, ld_B1, ld_B2, ld_er, mean_done, en1, en2, ready, output [7:0] adr);
+	reg [7:0] count;
+	reg [2:0] ns,ps;
+	reg en_ct,ld_ct;
+	wire cout;
+	parameter [2:0] idle = 3'd0, init_sum = 3'd1, sum = 3'd2, initB1 = 3'd3, B1 = 3'd4, initB0 = 3'd5, B0 = 3'd6, E = 3'd7;
+	always @ (ps,cout,start) begin
+		ns = idle; en_ct=0; en1=0; en2=0; en2=0; mean_done=0; ld_p=1; ld_ss=1; ld_ss=1; ld_B1=1; ld_B2=1; ld_er=1; ld_ct=1; ready = 1;
+		case(ps)
+			idle: begin ns = start ? init_sum : idle; ready = 1; end
+			init_sum: ns = sum;
+			sum: begin ns = cout ? initB1 : sum; en_ct=1; ld_ct=0; ld_p = 0; en1 = 1; end
+			initB1: begin ns = B1; ld_p = 0; en1 = 1; mean_done = 1; end
+			B1: begin ns = cout ? initB0 : B1; en_ct=1; ld_ct=0; ld_p = 0; ld_ss = 0; en1 = 1; mean_done = 1; end
+			initB0: begin ns = B0; ld_p = 0; ld_ss = 0; ld_B1 = 0; en1 = 1; mean_done = 1; end
+			B0: begin ns = E; ld_p = 0; ld_ss = 0; ld_B1 = 0; ld_B2 = 0; en1 = 1; mean_done = 1; end
+			E: begin ns = cout ? idle : E; en_ct=1; ld_ct=0; ld_p = 0; ld_ss = 0; ld_B1 = 0; ld_B2 = 0; ld_er = 0; en2 = 1; mean_done = 1; end
+		endcase
+	end
+	always @ (posedge clk, posedge rst) begin
+		if (rst) 
+			ps <= idle;
+		else
+			ps <= ns;
+	end
+	always @ (posedge clk, posedge rst) begin
+		if (rst) 
+			count <= 8'd0;
+		else if (ld_ct)
+			count <= 8'd106;
+		else if (en_ct)
+			count <= count + 1'b1;
+	end
+	assign cout = &count;
+	assign adr = count - 106;
+endmodule

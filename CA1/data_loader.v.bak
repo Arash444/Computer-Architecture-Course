@@ -1,0 +1,5 @@
+`timescale 1ns/1ns
+module data_loader(memory,x,y)
+    input reg [19:0] memory [0:149];
+    output [19:0] x,y;
+endmodule

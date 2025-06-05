@@ -1,0 +1,47 @@
+`timescale 1ns/1ns
+module calculator_coefficient (input [19:0] X,Y, input en1, ld_p ,ld_ss ,ld_B1 ,ld_B0 ,mean_done ,clk ,reset, output [19:0] B0,B1);
+	wire [19:0] MultipX, addX1, meanX, subX1, powerX;
+	wire [19:0] MultipY, addY1, meanY, subY1;
+	wire [19:0] Multi1, addSSXY,addSSXX, divide1, Multi2, sub1;
+	wire [19:0] X_,Y_, partial_sumX, partial_sumY, sumSSXY, sumSSXX;
+
+	Register XReg(clk,rst,1'b0, en1, X, X_);
+	Register YReg(clk,rst,1'b0, en1, Y, Y_);
+
+	assign addX1 = X_ + partial_sumX;
+	assign MultipX = mean_done ? partial_sumX : addX1;
+	Register PartialSumX(clk,rst,ld_p, en1, MultipX, partial_sumX);
+
+	assign addY1 = Y_ + partial_sumY;
+	assign MultipY = mean_done ? partial_sumY : addY1;
+	Register PartialSumY(clk,rst,ld_p, en1, MultipY, partial_sumY);
+	
+	assign meanX = partial_sumX / 20'd150;
+	assign subX1 = X_ - meanX;
+
+	assign meanY = partial_sumY / 20'd150;
+	assign subY1 = Y_ - meanY;
+
+	assign Multi1 = subY1 * subX1;
+	assign addSSXY = sumSSXY + Multi1;
+	Register SumSSXY(clk,rst,ld_ss, en1, addSSXY, sumSSXY);
+
+	assign powerX = subX1 * subX1;
+	assign addSSXX = addSSXX + powerX;
+	Register SumSSXX(clk,rst,ld_ss, en1, addSSXX, sumSSXX);
+
+	assign divide1 = sumSSXY / sumSSXX;
+	Register RegB1(clk,rst,ld_B1, en1, divide1, B1);
+	
+	assign Multi2 = meanX * B1;
+	assign sub1 = meanY - Multi2;
+	Register RegB2(clk,rst,ld_B0, en1, sub1, B0);
+endmodule
+module Register (input clk,rst,ld,en, input[19:0] PI, output reg [19:0] PO);
+	always @ (posedge clk, posedge rst) begin
+		if (rst) PO <= 20'b0;
+		else if (ld) PO <= 20'b0;
+		else if (en) 
+			PO <= PI;
+	end
+endmodule

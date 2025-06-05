@@ -1,0 +1,13 @@
+module DATAMEM(input mem_write, mem_read, clk, input [9:0] adr, input [31:0] w_data, output [31:0] out);
+	reg [31:0] datamem [1023:0];
+	reg [31:0] outt;
+	initial begin
+		$readmemb("init.txt",datamem);
+	end
+	always@(posedge clk)begin
+		if(mem_read)
+			outt <= datamem[adr];
+		if(mem_write)
+			datamem[adr] <= w_data;
+	end // always@(posedge clk)
+endmodule

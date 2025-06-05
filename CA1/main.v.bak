@@ -1,0 +1,9 @@
+`timescale 1ns/1ns
+module main (input [19:0] X,Y, input [0:149] memory, input clk, reset, start, output reg[19:0] E, B0, B1);
+	wire ld_p, ld_ss, ld_B1, ld_B2, ld_er, mean_done, en1, en2;
+	Controller C(clk,rst,start, ld_p, ld_ss, ld_B1, ld_B0, ld_er, mean_done, en1, en2);
+	data_loader DL(memory,X,Y);
+	error_checker EC(X,Y,B0,B1, en2, ld_er, clk, reset, E);
+	calculator_coefficient (X,Y, en1, ld_p ,ld_ss ,ld_B1 ,ld_B0 ,mean_done ,clk ,reset, B0,B1);
+endmodule
+	

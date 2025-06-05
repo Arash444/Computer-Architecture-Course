@@ -1,0 +1,122 @@
+module CU(input [31:0] ins, input clk, output reg reg_dst, r31, reg_write, alu_src, mem_read, mem_write, mem_to_reg, write_pc_4, branch, adr_r31, jump, output reg [1:0] alu_op);
+	always@(negedge clk)begin
+		if(ins[31:26] == 6'b000000) begin //rt
+			reg_dst <= 1'b1;
+			r31 <= 1'b0;
+			reg_write <= 1'b1;
+			alu_src <= 1'b0;
+			alu_op <= 2'b00;
+			mem_read <= 1'b0;
+			mem_write <= 1'b0;
+			mem_to_reg <= 1'b0;
+			write_pc_4 <= 1'b0;
+			branch <= 1'b0;
+			adr_r31 <= 1'b0;
+			jump <= 1'b0;
+		end else if (ins[31:26] == 6'b000001) begin //lw
+			reg_dst <= 1'b0;
+			r31 <= 1'b0;
+			reg_write <= 1'b1;
+			alu_src <= 1'b1;
+			alu_op <= 2'b01;
+			mem_read <= 1'b1;
+			mem_write <= 1'b0;
+			mem_to_reg <= 1'b1;
+			write_pc_4 <= 1'b0;
+			branch <= 1'b0;
+			adr_r31 <= 1'b0;
+			jump <= 1'b0;
+		end else if (ins[31:26] == 6'b000010) begin//sw
+			reg_dst <= 1'b0;
+			r31 <= 1'b0;
+			reg_write <= 1'b0;
+			alu_src <= 1'b1;
+			alu_op <= 2'b01;
+			mem_read <= 1'b0;
+			mem_write <= 1'b1;
+			mem_to_reg <= 1'b0;
+			write_pc_4 <= 1'b0;
+			branch <= 1'b0;
+			adr_r31 <= 1'b0;
+			jump <= 1'b0;
+		end else if (ins[31:26] == 6'b000011) begin//addi
+			reg_dst <= 1'b0;
+			r31 <= 1'b0;
+			reg_write <= 1'b1;
+			alu_src <= 1'b1;
+			alu_op <= 2'b01;
+			mem_read <= 1'b0;
+			mem_write <= 1'b0;
+			mem_to_reg <= 1'b0;
+			write_pc_4 <= 1'b0;
+			branch <= 1'b0;
+			adr_r31 <= 1'b0;
+			jump <= 1'b0;
+		end else if (ins[31:26] == 6'b000100) begin//slti
+			reg_dst <= 1'b0;
+			r31 <= 1'b0;
+			reg_write <= 1'b1;
+			alu_src <= 1'b1;
+			alu_op <= 2'b11;
+			mem_read <= 1'b0;
+			mem_write <= 1'b0;
+			mem_to_reg <= 1'b0;
+			write_pc_4 <= 1'b0;
+			branch <= 1'b0;
+			adr_r31 <= 1'b0;
+			jump <= 1'b0;
+		end else if (ins[31:26] == 6'b000101) begin//j
+			reg_dst <= 1'b0;
+			r31 <= 1'b0;
+			reg_write <= 1'b0;
+			alu_src <= 1'b0;
+			alu_op <= 2'b00;
+			mem_read <= 1'b0;
+			mem_write <= 1'b0;
+			mem_to_reg <= 1'b0;
+			write_pc_4 <= 1'b0;
+			branch <= 1'b0;
+			adr_r31 <= 1'b0;
+			jump <= 1'b1;
+		end else if (ins[31:26] == 6'b000110) begin//jal
+			reg_dst <= 1'b0;
+			r31 <= 1'b1;
+			reg_write <= 1'b1;
+			alu_src <= 1'b0;
+			alu_op <= 2'b00;
+			mem_read <= 1'b0;
+			mem_write <= 1'b0;
+			mem_to_reg <= 1'b0;
+			write_pc_4 <= 1'b1;
+			branch <= 1'b0;
+			adr_r31 <= 1'b0;
+			jump <= 1'b1;
+		end else if (ins[31:26] == 6'b000111) begin//jr
+			reg_dst <= 1'b0;
+			r31 <= 1'b1;
+			reg_write <= 1'b0;
+			alu_src <= 1'b0;
+			alu_op <= 2'b00;
+			mem_read <= 1'b0;
+			mem_write <= 1'b0;
+			mem_to_reg <= 1'b0;
+			write_pc_4 <= 1'b0;
+			branch <= 1'b0;
+			adr_r31 <= 1'b1;
+			jump <= 1'b0;
+		end else if (ins[31:26] == 6'b001000) begin//beq
+			reg_dst <= 1'b0;
+			r31 <= 1'b0;
+			reg_write <= 1'b0;
+			alu_src <= 1'b1;
+			alu_op <= 2'b10;
+			mem_read <= 1'b0;
+			mem_write <= 1'b0;
+			mem_to_reg <= 1'b0;
+			write_pc_4 <= 1'b0;
+			branch <= 1'b1;
+			adr_r31 <= 1'b0;
+			jump <= 1'b0;
+		end
+	end // always@(posedge clk)
+endmodule

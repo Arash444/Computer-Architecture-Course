@@ -1,0 +1,45 @@
+{H:/University/Term 4/Computer Architecture/CA/CA1/calculator_coefficient.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA1/calculator_coefficient.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module calculator_coefficient
+-- Compiling module Register
+
+Top level modules:
+	calculator_coefficient
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA1/data_loader.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA1/data_loader.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module data_loader
+
+Top level modules:
+	data_loader
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA1/Controller.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA1/Controller.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA1/main.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA1/main.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module main
+
+Top level modules:
+	main
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA1/error_checker.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA1/error_checker.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module error_checker
+-- Compiling module Register
+
+Top level modules:
+	error_checker
+
+} {} {}} {H:/University/Term 4/Computer Architecture/CA/CA1/TB.v} {1 {vlog -work work -stats=none {H:/University/Term 4/Computer Architecture/CA/CA1/TB.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TB
+
+Top level modules:
+	TB
+
+} {} {}}

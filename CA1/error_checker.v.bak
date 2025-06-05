@@ -1,0 +1,25 @@
+`timescale 1ns/1ns
+module error_checker (input [19:0] X,Y,B0,B1, input en2, ld_er, clk, reset, output [19:0] E);
+	wire [19:0] multi, add, sub;
+	wire [19:0] X_,Y_,B0_,B1_;
+
+	Register XReg(clk,rst,0, en2, X, X_);
+	Register YReg(clk,rst,0, en2, Y, Y_);
+	Register B0Reg(clk,rst,0, en2, B0, B0_);
+	Register B1Reg(clk,rst,0, en2, B1, B1_);
+	
+	assign multi = X_ * B1_;
+	assign add = B0_ + multi;
+	assign sub = Y_ * add;
+
+	Register EReg(clk,rst,ld_er, en2, sub, E);
+
+endmodule
+module Register (input clk,rst,ld,en, input[19:0] PI, output reg [19:0] PO);
+	always @ (posedge clk, posedge rst) begin
+		if (rst) PO <= 20'b0;
+		else if (ld) PO <= 20'b0;
+		else if (en) 
+			PO <= PI;
+	end
+endmodule

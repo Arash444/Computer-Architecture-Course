@@ -1,0 +1,20 @@
+# Reading pref.tcl
+# OpenFile {H:/University/Term 4/Computer Architecture/CA/CA2/CA2.mpf}
+# Loading project CA2
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of pc.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of datapath.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of testbench.v was successful.
+# 15 compiles, 0 failed with no errors.
+# Load canceled
