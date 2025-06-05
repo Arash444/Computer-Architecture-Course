@@ -1,0 +1,24 @@
+module Hazzard(input [4:0] RtIDEX, Rs, Rt, input mem_read_IDEX, init, IFID_flush_Temp, output reg PCwrite, IFIDwrite, Controller_Flush, IFID_flush);
+	always@(mem_read_IDEX, RtIDEX, IFID_flush_Temp, init) begin
+		PCwrite = 1'b1;
+		IFIDwrite = 1'b1;
+		Controller_Flush = 1'b0;
+		IFID_flush = 1'b0;
+		if (init == 1'b1)
+			begin PCwrite <= 1'b1; IFIDwrite <= 1'b1; Controller_Flush <= 1'b0; IFID_flush <= 1'b0; end
+		else if (mem_read_IDEX == 1'b1 && (RtIDEX == Rs || RtIDEX == Rt))
+			begin PCwrite <= 1'b0; IFIDwrite <= 1'b0; Controller_Flush <= 1'b1; 
+				if (IFID_flush_Temp == 1'b1)
+					IFID_flush <= 1'b1;
+				else
+					IFID_flush <= 1'b0;
+			 end
+		else
+			begin PCwrite <= 1'b1; IFIDwrite <= 1'b1; Controller_Flush <= 1'b0; 
+				if (IFID_flush_Temp == 1'b1)
+					IFID_flush <= 1'b1;
+				else
+					IFID_flush <= 1'b0;	
+			end
+		end
+endmodule

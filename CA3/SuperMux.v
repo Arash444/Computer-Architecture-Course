@@ -1,0 +1,7 @@
+module SuperMux(input Controller_Flush, reg_dst, r31, reg_write, alu_src, mem_read, mem_write, mem_to_reg, write_pc_4, branch, adr_r31, jump, input [2:0] ALU_opc,
+		output reg_dstO, r31O, reg_writeO, alu_srcO, mem_readO, mem_writeO, mem_to_regO, write_pc_4O, branchO, adr_r31O, jumpO, output [2:0] ALU_opcO);
+
+	assign {reg_dstO, r31O, reg_writeO, alu_srcO, mem_readO, mem_writeO, mem_to_regO, write_pc_4O, branchO, adr_r31O, jumpO, ALU_opcO } = Controller_Flush ? 14'b0 : 
+	{reg_dst, r31, reg_write, alu_src, mem_read, mem_write, mem_to_reg, write_pc_4, branch, adr_r31, jump, ALU_opc};
+
+endmodule

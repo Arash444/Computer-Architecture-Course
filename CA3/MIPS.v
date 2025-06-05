@@ -1,0 +1,9 @@
+module MIPS(input clk, init);
+	wire [31:0] Inst;
+	wire [2:0] ALU_opc;
+	wire [1:0] alu_op;
+	wire reg_dst, r31, reg_write, alu_src, mem_read, mem_write, mem_to_reg, write_pc_4, branch, adr_r31, jump;
+	datapath ourdp(clk, init, reg_dst, r31, reg_write, alu_src, mem_read, mem_write, mem_to_reg, write_pc_4, branch, adr_r31, jump, ALU_opc, Inst);
+   	CU ourCU(Inst[31:26], init, reg_dst, r31, reg_write, alu_src, mem_read, mem_write, mem_to_reg, write_pc_4, branch, adr_r31, jump, alu_op);
+	ALUCU ourALUCU(alu_op, Inst[5:0], ALU_opc);
+endmodule

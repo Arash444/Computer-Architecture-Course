@@ -1,0 +1,1671 @@
+# Reading pref.tcl
+# OpenFile {H:/University/Term 4/Computer Architecture/CA/CA3/CA3.mpf}
+# Loading project CA3
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 0 failed with no errors.
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 10:06:26 on Jun 17,2022
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.shifter
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.XNOR
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.NegRegister
+# Loading work.CU
+# Loading work.ALUCU
+add wave -position insertpoint sim:/TB/UUT/ourdp/*
+run
+# ** Warning: (vsim-7) Failed to open readmem file "init.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : H:/University/Term 4/Computer Architecture/CA/CA3/data-memory.v(4)
+#    Time: 0 ps  Iteration: 0  Instance: /TB/UUT/ourdp/ourDATAMEM
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: (vsim-7) Failed to open readmem file "init.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : H:/University/Term 4/Computer Architecture/CA/CA3/data-memory.v(4)
+#    Time: 0 ps  Iteration: 0  Instance: /TB/UUT/ourdp/ourDATAMEM
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4006 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+quit -sim
+# End time: 11:12:00 on Jun 17,2022, Elapsed time: 1:05:34
+# Errors: 0, Warnings: 2
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 11:12:13 on Jun 17,2022
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.shifter
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.XNOR
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.NegRegister
+# Loading work.CU
+# Loading work.ALUCU
+add wave -position insertpoint sim:/TB/UUT/ourdp/*
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4006 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+restart
+run
+run
+run
+restart
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.shifter
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.XNOR
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.NegRegister
+# Loading work.CU
+# Loading work.ALUCU
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.shifter
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.XNOR
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.NegRegister
+# Loading work.CU
+# Loading work.ALUCU
+run
+run
+run
+run
+run
+run
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v failed with 2 errors.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 1 failed with 2 errors.
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.shifter
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.XNOR
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.NegRegister
+# Loading work.CU
+# Loading work.ALUCU
+run
+run
+run
+run
+run
+run
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.shifter
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.XNOR
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.NegRegister
+# Loading work.CU
+# Loading work.ALUCU
+# Warning in wave window restart: (vish-4014) No objects found matching '/TB/UUT/ourdp/shift'. 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4006 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+restart
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4006 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+# Break key hit
+quit -sim
+# End time: 11:55:25 on Jun 17,2022, Elapsed time: 0:43:12
+# Errors: 0, Warnings: 1
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 0 failed with no errors.
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 11:56:50 on Jun 17,2022
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.shifter
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.XNOR
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.NegRegister
+# Loading work.CU
+# Loading work.ALUCU
+add wave -position insertpoint sim:/TB/UUT/ourdp/*
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+run
+run
+run
+run
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v failed with 4 errors.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 1 failed with 4 errors.
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v failed with 2 errors.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 1 failed with 2 errors.
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.shifter
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.NegRegister
+# Loading work.CU
+# Loading work.ALUCU
+restart
+run
+run
+run
+run
+quit -sim
+# End time: 12:14:06 on Jun 17,2022, Elapsed time: 0:17:16
+# Errors: 0, Warnings: 1
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 12:14:17 on Jun 17,2022
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.shifter
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.NegRegister
+# Loading work.CU
+# Loading work.ALUCU
+add wave -position insertpoint sim:/TB/UUT/ourdp/*
+run
+run
+quit -sim
+restart
+# End time: 12:14:45 on Jun 17,2022, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 1
+# No Design Loaded!
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 12:15:52 on Jun 17,2022
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.shifter
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.NegRegister
+# Loading work.CU
+# Loading work.ALUCU
+add wave -position insertpoint sim:/TB/UUT/ourdp/*
+run
+run
+restart
+run
+run
+restart
+run
+run
+run
+restart
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+restart
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+run
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+run
+run
+run
+run
+restart
+run
+run
+restart
+restart
+run
+run
+run
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+restart
+run
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+run
+run
+restart
+run
+run
+run
+run
+restart
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.NegRegister
+# Loading work.CU
+# Loading work.ALUCU
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+restart
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+restart
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+run
+run
+run
+run
+restart
+restart
+run
+run
+run
+run
+run
+restart
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+restart
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.shifter
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.NegRegister
+# Loading work.CU
+# Loading work.ALUCU
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+run
+run
+restart
+run
+run
+run
+run
+run
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+run
+restart
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+restart
+restart
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+run
+run
+restart
+restart
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of adder.v was successful.
+# Compile of ALU.v failed with 5 errors.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 1 failed with 5 errors.
+# Compile of adder.v was successful.
+# Compile of ALU.v failed with 5 errors.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 1 failed with 5 errors.
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.shifter
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.NegRegister
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.CU
+# Loading work.ALUCU
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+run
+restart
+run
+run
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of adder.v was successful with warnings.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v failed with 3 errors.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 1 failed with 3 errors.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v failed with 3 errors.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 1 failed with 3 errors.
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v failed with 1 errors.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 1 failed with 1 error.
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.shifter
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.NegRegister
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.CU
+# Loading work.ALUCU
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+run
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU-CU.v was successful.
+# Compile of and.v was successful.
+# Compile of CU.v was successful.
+# Compile of data-memory.v was successful.
+# Compile of datapath.v was successful.
+# Compile of inst-memory.v was successful.
+# Compile of MIPS.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of reg-file.v was successful.
+# Compile of shifter.v was successful.
+# Compile of sign-ex.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of equal.v was successful.
+# Compile of xor.v was successful.
+# Compile of Register.v was successful.
+# Compile of IFID.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of or.v was successful.
+# Compile of pc.v was successful.
+# Compile of HazzardUnit.v was successful.
+# Compile of SuperMux.v was successful.
+# Compile of RegisterWrite.v was successful.
+# Compile of NegRegister.v was successful.
+# 29 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.MIPS
+# Loading work.datapath
+# Loading work.PC
+# Loading work.adder
+# Loading work.INSMEM
+# Loading work.And
+# Loading work.Or
+# Loading work.mux
+# Loading work.IFID
+# Loading work.RegisterWrite
+# Loading work.Hazzard
+# Loading work.SuperMux
+# Loading work.shifter
+# Loading work.signex
+# Loading work.Regfile
+# Loading work.equal
+# Loading work.IDEX
+# Loading work.Register
+# Loading work.FWU
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.EXMEM
+# Loading work.NegRegister
+# Loading work.DATAMEM
+# Loading work.MEMWB
+# Loading work.CU
+# Loading work.ALUCU
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+run
+run
+run
+restart
+run
+run
+run
+run
+run
+# ** Note: $stop    : H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v(8)
+#    Time: 4806 ps  Iteration: 0  Instance: /TB
+# Break in Module TB at H:/University/Term 4/Computer Architecture/CA/CA3/testbench.v line 8
+run
+run
+run
+# End time: 23:48:08 on Jun 17,2022, Elapsed time: 11:32:16
+# Errors: 0, Warnings: 1

@@ -1,0 +1,9 @@
+module equal(input [31:0] A,B, output w);
+	wire [31:0] Result;
+	Result = A - B;
+	w = ~| Result;
+endmodule
+
+	/*wire [31:0] Xnor;
+	XNOR XNORE(a,b,Xnor);
+	assign w = ~| Xnor;*/

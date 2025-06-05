@@ -1,0 +1,21 @@
+module IDEX(input [31:0] RegA_data, RegB_data, PC1, data_extend16, input [4:0] Rs, Rt, Rd, input [2:0] ALU_opc, input clk, reg_dst, r31, reg_write, alu_src, mem_read, mem_write, mem_to_reg, write_pc_4, 
+	output [31:0] RegA_dataO, RegB_dataO, PC1O, data_extend16O, output [4:0] RsO, RtO, RdO, output [2:0] ALU_opcO, output reg_dstO, r31O, reg_writeO, alu_srcO, mem_readO, mem_writeO, mem_to_regO, write_pc_4O);
+
+	Register#(1) REGDEST(clk, reg_dst, reg_dstO);
+	Register#(1) R31(clk, r31, r31O);
+	Register#(1) REG_WRITE(clk, reg_write, reg_writeO);
+	Register#(1) ALU_SRC(clk, alu_src, alu_srcO);
+	Register#(1) MEM_READ(clk, mem_read, mem_readO);
+	Register#(1) MEM_WRITE(clk, mem_write, mem_writeO);
+	Register#(1) MEM_TO_REG(clk, mem_to_reg, mem_to_regO);
+	Register#(1) WRITE_PC_4(clk, write_pc_4, write_pc_4O);
+	Register#(3) ALU_OPC(clk, ALU_opc, ALU_opcO);
+	Register#(5) RS(clk, Rs, RsO);
+	Register#(5) RT(clk, Rt, RtO);
+	Register#(5) RD(clk, Rd, RdO);
+	Register RPC1(clk, PC1, PC1O);
+	Register REGA(clk, RegA_data, RegA_dataO);
+	Register REGB(clk, RegB_data, RegB_dataO);
+	Register DATA_EXTEND16(clk, data_extend16, data_extend16O);
+
+endmodule	

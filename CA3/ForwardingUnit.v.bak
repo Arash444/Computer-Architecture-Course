@@ -1,0 +1,11 @@
+module FWU(input [4:0] RxIDEX, wRegEXMEM, wRegMEMWB, input RegWriteEXMEM, RegWriteMEMWB, output reg [1:0] ForwardCtrl);
+	always@(RxIDEX, wRegEXMEM, wRegMEMWB, RegWriteEXMEM, RegWriteMEMWB) begin
+		ForwardCtrl = 2'b00;
+		if (RegWriteEXMEM == 1'b1 && wRegEXMEM == RxIDEX && wRegEXMEM != 4'd0 )
+			ForwardCtrl <= 2'b10;
+		else if (RegWriteMEMWB == 1'b1 && wRegMEMWB == RxIDEX && wRegMEMWB != 4'd0)
+			ForwardCtrl <= 2'b01;
+		else
+			ForwardCtrl <= 2'b00;
+		end
+endmodule
